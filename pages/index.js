@@ -1,9 +1,12 @@
 
 import React from 'react'
-
+import Appbar from '../Components/Appbar'
+import Main from '../Components/Main'
 const Index=()=>(
-  <div>
-    <h1>Hello</h1>
-  </div>
+<>
+
+<Appbar></Appbar>
+<Main></Main>
+</>
 )
 export default Index
