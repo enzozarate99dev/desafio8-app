@@ -13,12 +13,22 @@ const Main =()=>(
 
             <Button variant="contained" sx={{ backgroundColor:'#ffcb05' }}>Get Started</Button>
         </section>
-        <section className="cards">
-            <Card title="Git" description="lorem ipsum"></Card>
-            <Card title="JS" description="lorem  ipsum"></Card>
+        <section className="cards-container">
+            <div className='cards'>
+            <Card title="Design" description="lorem ipsum"></Card>
+            <Card title="Development" description="lorem  ipsum"></Card>
+            <Card title="Mobile Friendly" description="lorem ipsum"></Card>
+            <Card title="e-Commerce" description="lorem  ipsum"></Card>
+            </div>
+            <Button variant="contained" sx={{ backgroundColor:'indigo' }}>Learn More</Button>
+
         </section>
         <style jsx>
             {`
+            .cards-container{
+                display: flex;
+                flex-direction: column;
+            }
             .cards{
                 display: flex;
                 align-items: center;
