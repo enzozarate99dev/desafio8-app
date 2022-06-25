@@ -6,12 +6,23 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Herobutton from './HeroButton'
+
+
 const Micard = () => {
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid item xs={3}>
-          <Card sx={{ maxWidth: 345 }}>
+      <Grid container spacing={2} className="cards-container"
+        sx={{
+          marginTop: 20,
+          marginBottom: 20,
+          padding: 5,
+          display:'flex',
+          justifyContent: 'space-between',
+          alignItems:'center'
+
+        }}>
+        <Grid item xs={12} sm={6} md={2} xl={2} className="card">
+          <Card sx={{ maxWidth: 345, backgroundColor:'#f4f4f4' }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -32,8 +43,8 @@ const Micard = () => {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-          <Card sx={{ maxWidth: 345 }}>
+        <Grid item xs={12} sm={6} md={2} xl={2} className="card">
+          <Card sx={{ maxWidth: 345, backgroundColor:'#f4f4f4' }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -54,8 +65,8 @@ const Micard = () => {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-          <Card sx={{ maxWidth: 345 }}>
+        <Grid item xs={12} sm={6} md={2} xl={2} className="card">
+          <Card sx={{ maxWidth: 345, backgroundColor:'#f4f4f4', margin: 0}}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -76,18 +87,19 @@ const Micard = () => {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-          <Card sx={{ maxWidth: 345 }}>
+        <Grid item xs={12} sm={6} md={2} xl={2} className="card">
+          <Card sx={{ maxWidth: 345, backgroundColor:'#f4f4f4' }}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 height="100%"
                 width="100%"
-                image="http://cdn.onlinewebfonts.com/svg/img_551091.png"
+                image="https://www.seekpng.com/png/detail/517-5178699_analytics-icon-analytics-icon-white-png.png"
+                alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div" sx={{ display: "flex", justifyContent: "center" }}>
-                  Content Management
+                  Data Analitycs
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -97,7 +109,7 @@ const Micard = () => {
             </CardActionArea>
           </Card>
         </Grid>
-        <Grid container justifyContent="center" alignItems="center">
+        <Grid container justifyContent="center" alignItems="center" sx={{ marginTop: 10 }}>
           <Herobutton name="Learn More">
 
           </Herobutton>

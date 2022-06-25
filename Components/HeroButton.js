@@ -7,7 +7,7 @@ const Herobutton = (props) => {
         <>
         <Stack spacing={2} direction="row">
       
-      <Button variant="contained" sx={{backgroundColor:"#ffcb05", color:"black"}}>{props.name}</Button>
+      <Button variant="contained" sx={{backgroundColor:"#c0b283", color:"white"}}>{props.name}</Button>
       
     </Stack>
         </>

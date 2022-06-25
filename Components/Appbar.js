@@ -11,7 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1, width:"100%" }}>
-      <AppBar position="static" sx={{backgroundColor:'indigo'}}>
+      <AppBar position="fixed" sx={{backgroundColor:'#c0b283'}}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             enzo.me
