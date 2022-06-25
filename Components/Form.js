@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Title from './Titles'
 const Form = () => (
+  <>
   <Grid container sx={{ 
     display: 'flex', 
     justifyContent: "center", 
@@ -41,6 +42,7 @@ const Form = () => (
 
     </Box>
   </Grid>
+  </>
 )
 
 export default Form;

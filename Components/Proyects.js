@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import Herobutton from './Herobutton';
-import  Title  from './Titles';
+
 
 const Img = styled('img')({
     margin: 'auto',
